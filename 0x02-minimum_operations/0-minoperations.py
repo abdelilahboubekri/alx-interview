@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Minimum Operations ,Given num n, 
-write a method that calculates the fewest number of operations
+Minimum Operations
+Given num n, write a method that calculates the fewest number of operations
 needed to result in exactly n H characters in a file
 Prototype: def minOperations(n)
 Returns an integer
