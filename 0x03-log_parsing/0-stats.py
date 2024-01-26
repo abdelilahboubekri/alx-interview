@@ -4,7 +4,7 @@ Read stdin line by line and computes metrics
 Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
 <status code> <file size>, skip line if not this format
 After every 10 min or keyboard interrupt (CTRL + C)
-Print these from beginning: number of lines by status code
+print these from beginning: number of lines by status code
 possible status codes: 200, 301, 400, 401, 404, 405, and 500
 if status code isn't an integer, do not print it
 format: <status code>: <number>
@@ -52,6 +52,9 @@ try:
             if (count_lines == 10):
                 print_msg(codes, file_size)
                 count_lines = 0
+
+finally:
+    print_msg(codes, file_size)
 
 finally:
     print_msg(codes, file_size)
