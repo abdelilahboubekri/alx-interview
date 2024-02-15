@@ -1,1 +1,1 @@
-n queens
+starwars_api
